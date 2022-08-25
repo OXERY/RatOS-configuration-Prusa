@@ -72,6 +72,15 @@ compile_mk3s() {
     cp /home/pi/klipper/out/klipper.elf.hex /home/pi/klipper_config/firmware_binaries/einsy-rambo-prusa.elf.hex
 }
 
+compile_voron_octopus() {
+    echo "Compiling firmware for Voron Octopus"
+    cp -f /home/pi/klipper_config/config/boards/voron-octopus-11/firmware.config /home/pi/klipper/.config
+    make olddefconfig
+    make clean
+    make
+    cp /home/pi/klipper/out/klipper.bin /home/pi/klipper_config/firmware_binaries/firmware-voron-octopus-11.bin
+}
+
 # Force script to exit if an error occurs
 set -e
 
@@ -93,6 +102,7 @@ compile_fysetc_spider
 compile_skr_pro_12
 compile_skr_2_429
 compile_mk3s
+compile_voron_octopus
 chown pi:pi /home/pi/klipper_config/firmware_binaries/*.bin
 chown pi:pi /home/pi/klipper_config/firmware_binaries/*.hex
 

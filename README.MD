@@ -1,6 +1,6 @@
 # Fork of https://github.com/Rat-OS/RatOS-configuration
 
-I liked the concept of RatOS and wanted to use it on my Prusa MK3S BEAR.
+I liked the concept of RatOS and wanted to use it on my Prusa MK3S BEAR and edited it also to fit my LDO Voron 2.4R2 350 (shouldn't be compatible to stock vorons).
 
 Therefore, the configuration is present for Standard Einsy (from https://github.com/HelgeKeck/RatOS-configuration-MK3S, Thanks @HelgeKeck !), but currently in untested condition.
 
