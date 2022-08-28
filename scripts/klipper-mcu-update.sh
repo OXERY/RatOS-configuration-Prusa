@@ -65,6 +65,22 @@ update_skr_2_429() {
     fi
 }
 
+update_mk3s() {
+    if [[ -h "/dev/prusa-i3-mk3sp" ]]
+    then
+        echo "Octopus v1.1 detected"
+        /home/pi/klipper_config/config/boards/prusa-einsy-rambo/make-and-flash-mcu.sh
+    fi
+}
+
+update_voron_octopus() {
+    if [[ -h "/dev/voron-octopus-11" ]]
+    then
+        echo "Octopus v1.1 detected"
+        /home/pi/klipper_config/config/boards/voron-octopus-11/make-and-flash-mcu.sh
+    fi
+}
+
 # Force script to exit if an error occurs
 set -e
 
@@ -77,3 +93,5 @@ update_btt_octopus_11_407
 update_fysetc_spider
 update_skr_pro_12
 update_skr_2_429
+update_mk3s
+update_voron_octopus
