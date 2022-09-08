@@ -6,14 +6,14 @@ fi
 
 update_rpi() {
     echo "Updating RPi"
-    /home/pi/klipper_config/config/boards/rpi/make-and-flash-mcu.sh
+    bash /home/pi/klipper_config/config/boards/rpi/make-and-flash-mcu.sh
 }
 
 update_octopus_pro_446() {
     if [[ -h "/dev/btt-octopus-pro-446" ]]
     then
         echo "Octopus Pro 446 detected"
-        /home/pi/klipper_config/config/boards/btt-octopus-pro-446/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/btt-octopus-pro-446/make-and-flash-mcu.sh
     fi
 }
 
@@ -21,7 +21,7 @@ update_octopus_pro_429() {
     if [[ -h "/dev/btt-octopus-pro-429" ]]
     then
         echo "Octopus Pro 429 detected"
-        /home/pi/klipper_config/config/boards/btt-octopus-pro-429/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/btt-octopus-pro-429/make-and-flash-mcu.sh
     fi
 }
 
@@ -29,7 +29,7 @@ update_btt_octopus_11() {
     if [[ -h "/dev/btt-octopus-11" ]]
     then
         echo "Octopus v1.1 detected"
-        /home/pi/klipper_config/config/boards/btt-octopus-11/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/btt-octopus-11/make-and-flash-mcu.sh
     fi
 }
 
@@ -37,7 +37,7 @@ update_btt_octopus_11_407() {
     if [[ -h "/dev/btt-octopus-11-407" ]]
     then
         echo "Octopus v1.1 STM32F407 detected"
-        /home/pi/klipper_config/config/boards/btt-octopus-11-407/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/btt-octopus-11-407/make-and-flash-mcu.sh
     fi
 }
 
@@ -45,7 +45,7 @@ update_fysetc_spider() {
     if [[ -h "/dev/fysetc-spider" ]]
     then
         echo "Fysetc Spider v1.1 detected"
-        /home/pi/klipper_config/config/boards/fysetc-spider/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/fysetc-spider/make-and-flash-mcu.sh
     fi
 }
 
@@ -53,7 +53,7 @@ update_skr_pro_12() {
     if [[ -h "/dev/btt-skr-pro-12" ]]
     then
         echo "SKR Pro v1.2 detected"
-        /home/pi/klipper_config/config/boards/btt-skr-pro-12/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/btt-skr-pro-12/make-and-flash-mcu.sh
     fi
 }
 
@@ -61,7 +61,7 @@ update_skr_2_429() {
     if [[ -h "/dev/btt-skr-2-429" ]]
     then
         echo "SKR 2 W/ STM32F429 detected"
-        /home/pi/klipper_config/config/boards/btt-skr-2-429/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/btt-skr-2-429/make-and-flash-mcu.sh
     fi
 }
 
@@ -69,7 +69,7 @@ update_mk3s() {
     if [[ -h "/dev/prusa-i3-mk3sp" ]]
     then
         echo "Octopus v1.1 detected"
-        /home/pi/klipper_config/config/boards/prusa-einsy-rambo/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/prusa-einsy-rambo/make-and-flash-mcu.sh
     fi
 }
 
@@ -77,7 +77,7 @@ update_voron_octopus() {
     if [[ -h "/dev/voron-octopus-11" ]]
     then
         echo "Octopus v1.1 detected"
-        /home/pi/klipper_config/config/boards/voron-octopus-11/make-and-flash-mcu.sh
+        bash /home/pi/klipper_config/config/boards/voron-octopus-11/make-and-flash-mcu.sh
     fi
 }
 
