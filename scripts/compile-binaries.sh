@@ -171,6 +171,24 @@ compile_prusa_einsy() {
     cp /home/pi/klipper/out/klipper.bin /home/pi/printer_data/config/firmware_binaries/firmware-prusa-einsy.bin
 }
 
+compile_voron_octopus_11() {
+    echo "Compiling firmware for Voron Octopus v1.1"
+    cp -f /home/pi/printer_data/config/RatOS/boards/voron-octopus-11/firmware.config /home/pi/klipper/.config
+    make olddefconfig
+    make clean
+    make
+    cp /home/pi/klipper/out/klipper.bin /home/pi/printer_data/config/firmware_binaries/firmware-voron-octopus-11.bin
+}
+
+compile_prusa_octopus_11() {
+    echo "Compiling firmware for Prusa Octopus v1.1"
+    cp -f /home/pi/printer_data/config/RatOS/boards/prusa-octopus-11/firmware.config /home/pi/klipper/.config
+    make olddefconfig
+    make clean
+    make
+    cp /home/pi/klipper/out/klipper.bin /home/pi/printer_data/config/firmware_binaries/firmware-prusa-octopus-11.bin
+}
+
 # Force script to exit if an error occurs
 set -e
 
@@ -203,6 +221,8 @@ compile_btt_skr_mini_e3_30
 compile_btt_skr_3
 compile_prusa_buddy
 compile_prusa_einsy
+compile_voron_octopus_11
+compile_prusa_octopus_11
 chown pi:pi /home/pi/printer_data/config/firmware_binaries/*.bin
 
 popd

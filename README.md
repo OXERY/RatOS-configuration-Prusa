@@ -1,14 +1,5 @@
-# RatOS Configuration
+# Fork of https://github.com/Rat-OS/RatOS-configuration v2.x
 
-This is the repository for the [RatOS](os.ratrig.com) modular configuration.
+I liked the concept of RatOS and wanted to use it on my Prusa MK3S BEAR and edited it also to fit my LDO Voron 2.4R2 350 (shouldn't be compatible to stock vorons).
 
-## Contributing
-
-All non-hotfix pull requests (meaning additions, enhancements and features) should be submitted against the development branch.
-Bug fixes should be submitted against the active branch.
-
-## Help and support
-
-Please use the unofficial Rat Rig discord for help and support. Only create an issue if you have found a bug and can describe how to reproduce it, feature requests and discussions should happen in the #ratos-development channel on discord.
-
-<a href="http://discord.gg/ratrig" target="_blank" rel="noopener noreferrer" style="margin-left: 5px;"><img src="https://img.shields.io/discord/582187371529764864?color=%235865F2&amp;label=discord&amp;logo=discord&amp;logoColor=white&amp;style=flat" alt="discord"></a>
+I use an BTT Octopus 1.1 Board in my Bear, so I matched everything to my PINs, please see https://github.com/OXERY/RatOS-configuration-Prusa/blob/master/boards/prusa-btt-octopus-11/BIGTREETECH%20Octopus%20-%20PIN.pdf, where the corresponding pins are marked. (copied from https://github.com/Prutsium/3D-Druckerplausch-Klipper/tree/main/Klipper_cfg/Prusa_Universal_Config_Revised, the config I used before. Thanks for the great cooperation @Prutsium !)
