@@ -1,5 +1,5 @@
 #!/bin/bash
-MCU=/dev/voron-octopus-11
+MCU=/dev/prusa-octopus-11
 if [ "$EUID" -ne 0 ]
   then echo "ERROR: Please run as root"
   exit
